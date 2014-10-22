@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define MAX 10
 void flip(int);
 void findMax(int[]);
-int a[5],i,j,n=4,imax,max;
+int a[MAX],i,j,n=4,imax,max;
 
 int main()
 {
 
     printf("Enter array elements");
-    for(i=0;i<5;i++)
+    for(i=0;i<MAX;i++)
         scanf("%d",&a[i]);
 
-    for(i=4;i>=0;i--)
+    for(i=MAX-1;i=>0;i--)
     {   max=a[0];
         imax=0;
         findMax(a);
@@ -19,7 +20,7 @@ int main()
         flip(i);
     }
      printf("\n");
-     for(i=0;i<5;i++)
+     for(i=0;i<MAX;i++)
         printf("%d \n",a[i]);
 }
 
@@ -34,7 +35,7 @@ void flip(int f)
     }
 }
 
-void findMax(int a[5])
+void findMax(int a[])
 {
   for(j=0;j<=i;j++)
         {
